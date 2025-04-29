@@ -1,0 +1,17 @@
+name = "John Doe"
+age = 20
+grade = 89.5
+is_enrolled = True
+subjects = ["Math", "Physics", "Computer Science"]
+address = {
+    "street": "123 Main Street",
+    "city": "New York",
+    "zip": "10001"
+}
+
+print("Name:", name, "| Type:", type(name))
+print("Age:", age, "| Type:", type(age))
+print("Grade:", grade, "| Type:", type(grade))
+print("Enrolled:", is_enrolled, "| Type:", type(is_enrolled))
+print("Subjects:", subjects, "| Type:", type(subjects))
+print("Address:", address, "| Type:", type(address))
