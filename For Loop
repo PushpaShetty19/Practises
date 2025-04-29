@@ -1,0 +1,23 @@
+#  FOR LOOP: 
+# Print numbers from 1 to 5
+print("For Loop Output:")
+for i in range(1, 6):
+    print(i)
+
+# WHILE LOOP: 
+# Countdown from 5 to 1 
+print("\nWhile Loop Output:")
+count = 5
+while count > 0:
+    print(count)
+    count -= 1
+
+# NESTED LOOP: 
+# Print a pyramid pattern
+print("\nNested Loop Output (Pyramid Pattern):")
+rows = 5
+for i in range(1, rows + 1): 
+    for j in range(i):        
+        print("*", end=" ")  
+    print()  # Move to the next line
+
