@@ -1,0 +1,580 @@
+CODE-1 (Maths expressions)
+
+1.a=lb
+
+l=float(input('Enter the length:'))
+b=float(input('Enter the breadth:'))
+a=l*b
+print('The area of Rectangle is:',a)
+
+
+
+2.a=1/2bh
+
+b=float(input('enter the b value:'))
+h=float(input('enter the h value:'))
+a=1/2*b*h
+print('the area is:',a)
+
+
+
+3.area=1/2(a+b)h
+
+b=float(input('enter the b value:'))
+h=float(input('enter the h value:'))
+a=float(input('Enter the a value'))
+area=1/2*(a+b)*h
+print('The area is:',area)
+
+
+
+4.a=PIr**2
+
+r=float(input('enter the r valur:'))
+PI=3.14
+a=PI*r**2
+print('The area is:',a)
+
+
+
+5.a=2(lh+lb+bh)
+
+l=float(input('enter the length:'))
+h=float(input('enter the height:'))
+b=float(input('enter the breadth:'))
+a=2*(l*h+l*b+b*h)
+print('the area is',a)
+
+
+
+6.d=(v2-u2)/2a
+
+v=float(input('Enter v value:'))
+u=float(input('Enter u value:'))
+a=float(input('Enter a value:'))
+d=(v**2-u**2)/2*a
+print('The d value is:',d)
+print()
+
+
+
+7.d=a2+2ab+b2
+
+a=float(input('Enter a value:'))
+b=float(input('Enter b value:'))
+d=a**2+2*a*b+b**2
+print('The d result is:',d)
+
+
+
+
+CODE-2 (Conditional statements)
+
+1.using if cond:-
+
+print('hi')
+if False:
+    print('in of')
+print('bye')
+
+
+
+2.a-b should not be -ve
+
+a=int(input('ENter the a value:'))
+b=int(input('enter the b value:'))
+if a<b:
+    r=b-a
+    print(r)
+elif a>b:
+    r=a-b
+    print(r)
+print('end')
+
+
+
+3.Print M/m if male or F/f if female
+
+g=str(input('Enter M/F:'))
+if g=='M' or g=='m':
+    print('Male')
+else:
+    print('Female')
+print('end')
+
+
+
+4.Print vowels 
+
+c=str(input('Enter the Character:'))
+if c=='a' or c=='e' or c=='i' or c=='o' or c=='u':
+    print('vowel')
+else:
+    print('Con')
+
+
+
+5.Find the final amount after discount
+
+amt=int(input('Enter the amount:'))
+if amt<=1000:
+    discount=amt*10/100
+elif 1000<amt<=5000:
+    discount=amt*20/100
+elif 5000<amt<=10000:
+    discount=amt*30/100  
+elif amt>10000:
+    discount=amt*50/10
+print('Final amount:',amt-discount)
+
+
+
+6.largest number
+PS: Write a program that takes three numbers as input and prints the largest among them.
+
+
+a=int(input('enter a value'))
+b=int(input('enter b value'))
+c=int(input('enter c value'))
+if a>=b and a>=c:
+    print('a is greater',a)
+elif b>=a and b>=c:
+    print('b is greater',b)
+else:
+    print('c is greater',c)
+
+
+
+7.simple calculator
+
+a=float(input('enter the a value:'))
+b=float(input('enter the b value:'))
+calc=input('enter the option(+,-,*,/):')
+if calc=='+':
+    res=a+b
+elif calc=='-':
+    res=a-b
+elif calc=='*':
+    res=a*b
+else:
+    res=a/b
+print('Result:',res)
+
+
+
+8.Positive or negative Number
+
+num=float(input('enter the number:'))
+if num>=0:
+    if num%2==0:
+        print('Even')
+    else:
+        print('Odd')
+    print('The number is Positive')
+else:
+    print('The number is negative')
+
+
+
+9.Voting eligibility
+
+name=input('enter the name:')
+a=float(input('Enter the age:'))
+if a>18:
+    print('Hi',name,', Your eligible for voting')
+else:
+    print('Sorry',name,', Your Not eligible for voting')
+print()
+
+
+
+10. Calculate bonus for employee
+PS: Write a Python program to calculate the bonus for an employee based on the following conditions:
+If experience >= 5 years, and salary > 50,000, bonus = 20% of salary.
+If experience >= 5 years, but salary ≤ 50,000, bonus = 15% of salary.
+If experience < 5 years, and salary > 50,000, bonus = 10% of salary.
+Otherwise, bonus = 5% of salary. 
+
+
+exp=int(input('Enter the experience of the employee:'))
+sal=float(input('Enter the salary of the employee:'))
+if exp>=5 and sal>50000:
+    bonus=20/100*sal
+elif exp>=5 and sal<=50000:
+    bonus=15/100*sal
+elif exp<5 and sal>500000:
+    bonus=10/100*sal
+else:
+    bonus=5/100*sal
+print('Bonus',bonus)
+print('Final_salary:',sal+bonus)
+
+
+
+11.Login authentication system
+PS:Create a Python program that checks user authentication.
+If username == "admin" and password == "1234", print "Access Granted".
+If username == "admin" but wrong password, print "Incorrect Password".
+If username != "admin", print "User Not Found".
+
+
+name=str(input('enter the user name:'))
+psw=int(input('enter the password:'))
+if name=='admin':
+    if psw==1234:
+        print('Access Granted')
+    else:
+        print('Incorrect password')
+else:
+    print('user not found')
+
+
+
+CODE 3: [While Loop]
+
+1.print positive and negative values seperately
+
+numbers = [7, -8, 5, 65, 15, -20, 30, -1, -99, 56]
+p = []
+n = []
+i = 0
+while i < len(numbers):
+    if numbers[i] > 0:
+        p.append(numbers[i])
+    elif numbers[i] < 0:
+        n.append(numbers[i])
+    i += 1
+print("Positive Numbers:", p)
+print("Negative Numbers:", n)
+
+
+
+2. print number in reverse order
+
+n=1234
+i=0
+while n!=0:
+    l=n%10
+    i=i*10+l
+    n=n//10
+print(i)
+
+
+
+
+c=1
+while c<=10:
+    if c%3==0:
+        c+=1
+        continue
+    print(c)
+    c+=1 
+
+
+i=0
+while i<10:
+    if i%2==0:
+        print(i)
+    else:
+        pass
+    i+=1
+
+
+
+
+i=0
+while i<10:
+        print(i)
+        i+=1
+        if i>5:
+            break
+else:
+    print('all num printed')
+        
+print('end')
+
+
+
+
+i=0
+while i<10:
+        print(i)
+        i+=1
+else:
+    print('all num printed')
+        
+print('end')
+
+
+
+
+x='hello'
+for c in x:
+    print(c)
+
+
+for v in [1,23,3]:
+    print(v)
+
+
+for i in range (10):
+    print(i)
+
+
+
+
+for i in range(20,13,-1):
+    print(i)
+
+
+
+
+for i in range(20,13,-2):
+    print(i)
+
+
+
+
+for i in range(0,5):
+    print(i,end=' ')
+
+
+for i in range(0,5):
+    for j in range(10,15):
+        print(i,j)
+
+
+
+for i in range(0,5):
+    for j in range(10,15):
+        print(i,j)
+    print()
+
+
+
+size=int(input('Enter the size:'))
+for i in range(size):
+    for j in range(size):
+        print('*',end=' ')
+    print()
+
+
+
+size=int(input('Enter the size:'))
+for i in range(size):
+    print('*'*i)
+print()
+
+
+
+size=int(input('Enter the size:'))
+for i in range(size,0,-1):
+    print('*'*i)
+
+
+
+size=int(input('Enter the size:'))
+for i in range(size):
+    for j in range(i+1):
+        print('*',end=' ')
+    print()
+
+
+for i in range(4):
+    for j in range(4-i):
+        print('*',end=' ')
+    print()
+
+
+code- match cases
+1)
+x=int(input('Enter the Value:'))
+match x:
+    case 1:
+        print('Sunday')
+    case 2:
+        print('Monday')
+    case 3:
+        print('Tuesday')
+    case 4:
+        print('Wednesday')
+    case 5:
+        print('Thursday')
+    case 6:
+        print('Friday')
+    case 7:
+        print('Saturday')
+    case _:
+        print('Day')
+        
+2)
+num = 75
+
+match num:
+    case _ if num < 50:
+        print("Number is less than 50")
+    case _ if num >= 50 and num <= 100:
+        print("Number is between 50 and 100")
+    case _:
+        print("Number is greater than 100")
+
+
+
+
+code - for else
+num=[12,25,34,35,2]
+for n in num:
+    if n%5==0:
+        print(n)
+        break
+        
+else:
+    print('na')
+        
+
+
+CODE-format method for print operation
+1)
+name = 'Pushpa'
+age = 21
+city = 'Honnavar'
+hobby = 'reading'
+paragraph = ("My name is {}. I am {} years old and I am from {}. "
+             "In my free time, I enjoy {}. It's my favorite hobby and helps me relax.").format(name, age, city, hobby)
+print(paragraph)
+print()
+
+
+2)
+name = 'Pushpa'
+age = 21
+city = 'Honnavar'
+hobby = 'reading'
+paragraph = f"My name is {name}. I am {age} years old and I am from {city}. In my free time, I enjoy {hobby}."
+print(paragraph)
+
+
+
+RECURSION:
+
+1)
+def fib(n):
+    if n <= 0:
+        return "Invalid input"
+    elif n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        return fib(n - 1) + fib(n - 2)
+
+print(fib(6))
+print()
+
+
+2)
+def sum(n):
+    if n == 0:
+        return 0
+    else:
+        return n % 10 + sum(n // 10)
+print(sum(1234))
+print()
+
+
+3)
+def reverse(s):
+    if len(s) == 0:
+        return s
+    else:
+        return s[-1] + reverse(s[:-1])  
+
+print(reverse("hello"))
+print()
+
+
+
+4)
+def pwr(base, exp):
+    if exp == 0: 
+        return 1
+    else:
+        return base * pwr(base, exp - 1) 
+
+print(pwr(2, 3))
+print()
+
+
+5)
+def palindrome(s):
+    if len(s) <= 1:  
+        return True
+    elif s[0] != s[-1]: 
+        return False
+    else:
+        return palindrome(s[1:-1])  
+
+print(palindrome("madam"))  
+print(palindrome("hello"))
+
+
+**RECURSION**
+
+def fib(n):
+    if n <= 0:
+        return "Invalid input"
+    elif n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        return fib(n - 1) + fib(n - 2)
+
+print(fib(6))
+print()
+
+
+
+def sum(n):
+    if n == 0:
+        return 0
+    else:
+        return n % 10 + sum(n // 10)
+print(sum(1234))
+print()
+
+
+
+def reverse(s):
+    if len(s) == 0:
+        return s
+    else:
+        return s[-1] + reverse(s[:-1])  
+
+print(reverse("hello"))
+print()
+
+
+
+
+def pwr(base, exp):
+    if exp == 0: 
+        return 1
+    else:
+        return base * pwr(base, exp - 1) 
+
+print(pwr(2, 3))
+print()
+
+
+
+def palindrome(s):
+    if len(s) <= 1:  
+        return True
+    elif s[0] != s[-1]: 
+        return False
+    else:
+        return palindrome(s[1:-1])  
+
+print(palindrome("madam"))  
+print(palindrome("hello"))
